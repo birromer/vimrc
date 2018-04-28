@@ -3,8 +3,100 @@
 "       This requries that you install https://github.com/amix/vimrc !
 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Vundle Plugins
+
+set nocompatible
+syntax on
+set nowrap
+set encoding=utf8
+
+"""" START Vundle Configuration 
+
+" Disable file type for vundle
+"filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+
+" Utility
+Plugin 'scrooloose/nerdtree'
+Plugin 'majutsushi/tagbar'
+Plugin 'ervandew/supertab'
+Plugin 'BufOnly.vim'
+Plugin 'wesQ3/vim-windowswap'
+Plugin 'SirVer/ultisnips'
+Plugin 'junegunn/fzf.vim'
+Plugin 'junegunn/fzf'
+Plugin 'godlygeek/tabular'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'benmills/vimux'
+Plugin 'jeetsukumaran/vim-buffergator'
+Plugin 'gilsondev/searchtasks.vim'
+Plugin 'Shougo/neocomplete.vim'
+Plugin 'tpope/vim-dispatch'
+
+" Generic Programming Support 
+Plugin 'jakedouglas/exuberant-ctags'
+Plugin 'honza/vim-snippets'
+Plugin 'Townk/vim-autoclose'
+Plugin 'tomtom/tcomment_vim'
+Plugin 'tobyS/vmustache'
+Plugin 'janko-m/vim-test'
+Plugin 'maksimr/vim-jsbeautify'
+Plugin 'vim-syntastic/syntastic'
+Plugin 'neomake/neomake'
+
+" Markdown / Writting
+Plugin 'reedes/vim-pencil'
+Plugin 'tpope/vim-markdown'
+Plugin 'jtratner/vim-flavored-markdown'
+Plugin 'LanguageTool'
+
+" Git Support
+Plugin 'kablamo/vim-git-log'
+Plugin 'gregsexton/gitv'
+Plugin 'tpope/vim-fugitive'
+"Plugin 'jaxbot/github-issues.vim'
+
+"################
+
+" Show linenumbers
+set number
+set ruler
+
+" Set Proper Tabs
+set tabstop=4
+set shiftwidth=4
+set smarttab
+set expandtab
+
+" Always display the status line
+set laststatus=2
+
+" Enable Elite mode, No ARRRROWWS!!!!
+let g:elite_mode=1
+
+" Enable highlighting of the current line
+set cursorline
+
+" Theme and Styling 
+set t_Co=256
+
+"if (h"as("termguicolo"rs"))
+"  set termguicolor"s
+"endif
+
+let g:spacegray_underline_search = 1
+let g:spacegray_italicize_comments = 1
 
 
+
+
+"###############################################################################
 """"""""""""""""""""""""""""""
 " => Load pathogen paths
 """"""""""""""""""""""""""""""
