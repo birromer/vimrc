@@ -62,6 +62,8 @@ Plugin 'gregsexton/gitv'
 Plugin 'tpope/vim-fugitive'
 "Plugin 'jaxbot/github-issues.vim'
 
+
+
 "################
 
 " Show linenumbers
