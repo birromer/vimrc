@@ -39,6 +39,10 @@ Plugin 'gilsondev/searchtasks.vim'
 Plugin 'Shougo/neocomplete.vim'
 Plugin 'tpope/vim-dispatch'
 
+Plugin 'jpalardy/vim-slime'
+
+let g:slime_target = "tmux"
+
 " Generic Programming Support 
 Plugin 'jakedouglas/exuberant-ctags'
 Plugin 'honza/vim-snippets'
